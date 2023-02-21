@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 - Cars</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="travel-box">
+            <span>Travel to: </span>
+            <div class="select-box">
+                <div class="select-box__current" tabindex="1">
+                <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" onchange="onCategoryChanged('Data/PHX.csv')"/>
+                    <p class="select-box__input-text">Phoenix, AZ</p>
+                </div>
+                <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked" onchange="onCategoryChanged('Data/KHOU.csv')"/>
+                    <p class="select-box__input-text">Houston, TX</p>
+                </div>
+                <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked" onchange="onCategoryChanged('Data/IND.csv')"/>
+                    <p class="select-box__input-text">Indianapolis, IN</p>
+                </div>
+                <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked" onchange="onCategoryChanged('Data/KNYC.csv')"/>
+                    <p class="select-box__input-text">New York City, NY</p>
+                </div>
+                <div class="select-box__value">
+                <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked" onchange="onCategoryChanged('Data/JAX.csv')"/>
+                <p class="select-box__input-text">Jacksonville, FL</p>
+                </div>
+                <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="5" value="6" name="Ben" checked="checked" onchange="onCategoryChanged('Data/CLT.csv')"/>
+                    <p class="select-box__input-text">Charlotte, NC</p>
+                </div>
+                <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="6" value="7" name="Ben" checked="checked" onchange="onCategoryChanged('Data/CQT.csv')"/>
+                    <p class="select-box__input-text">Los Angeles, CA</p>
+                </div>
+                <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="7" value="8" name="Ben" checked="checked" onchange="onCategoryChanged('Data/MDW.csv')"/>
+                    <p class="select-box__input-text">Chicago, IL</p>
+                </div>
+                <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="8" value="9" name="Ben" checked="checked" onchange="onCategoryChanged('Data/PHL.csv')"/>
+                    <p class="select-box__input-text">Philadelphia, PA</p>
+                </div>
+                <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="9" value="10" name="Ben" checked="checked" onchange="onCategoryChanged('Data/KSEA.csv')"/>
+                    <p class="select-box__input-text">Seattle, WA</p>
+                </div>
+                <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+            </div>
+            <ul class="select-box__list">
+                <li>
+                <label class="select-box__option" for="0" aria-hidden="aria-hidden">Phoenix, AZ</label>
+                </li>
+                <li>
+                <label class="select-box__option" for="1" aria-hidden="aria-hidden">Houston, TX</label>
+                </li>
+                <li>
+                <label class="select-box__option" for="2" aria-hidden="aria-hidden">Indianapolis, IN</label>
+                </li>
+                <li>
+                <label class="select-box__option" for="3" aria-hidden="aria-hidden">New York City, NY</label>
+                </li>
+                <li>
+                <label class="select-box__option" for="4" aria-hidden="aria-hidden">Jacksonville, FL</label>
+                </li>
+                <li>
+                    <label class="select-box__option" for="5" aria-hidden="aria-hidden">Charlotte, NC</label>
+                </li>
+                <li>
+                    <label class="select-box__option" for="6" aria-hidden="aria-hidden">Los Angeles, CA</label>
+                </li>
+                <li>
+                    <label class="select-box__option" for="7" aria-hidden="aria-hidden">Chicago, IL</label>
+                </li>
+                <li>
+                    <label class="select-box__option" for="8" aria-hidden="aria-hidden">Philadelphia, PA</label>
+                </li>
+                <li>
+                    <label class="select-box__option" for="9" aria-hidden="aria-hidden">Seattle, WA</label>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <h3>Annual Temperature Pattern</h3>
+        <svg width="940" height="40" class="legendSVG"></svg>
+        <svg width="940" height="270" class="tempSVG"></svg>
+        <h3>Annual Precipitation Rate</h3>
+        <div class="hoverinfo">
+            <span>Precip: Precipitation on the day</span>
+            <br>
+            <span>Record: Highest recorded precipitation on the day</span>
+        </div>
+        <div class="tol">Hover over me!</div>
+        <svg width="940" height="270" class="precipSVG"></svg>
+    </div>
+</body>
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script src="./main.js"></script>
+</html>
+
+
+
+
+
