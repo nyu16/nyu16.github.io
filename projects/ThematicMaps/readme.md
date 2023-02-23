@@ -1,4 +1,4 @@
-# Lab 4: [Map](https://nyu16.github.io/projects/ThematicMaps/themehtml) Design and Tile Generation
+# Lab 4: [Map](https://nyu16.github.io/projects/ThematicMaps/theme.html) Design and Tile Generation
 
 This is a [thematic map](https://nyu16.github.io/projects/ThematicMaps/theme.html) of cities on the west of Seattle including Bainbridge Island, Silverdale, Enetai, Suquamish, Kingston, and Bremerton. The menu on the top right of the map allows the user to view the map in four different options. First of the four map tile views is the basemap. 
 ![ Base Map](img/basemap.png)
